@@ -1,0 +1,43 @@
+
+@media (max-width: 320px) {
+
+}
+@media (min-width: 321px) and (max-width: 479px) {
+
+}
+
+
+
+/* Medium mobile devices (landscape and portrait) */
+@media (min-width: 480px) and (max-width: 639px) {
+  /* Styles for medium mobile devices */
+}
+
+/* Large mobile devices (landscape and portrait) */
+@media (min-width: 640px) and (max-width: 767px) {
+  /* Styles for large mobile devices */
+}
+
+/* Small tablets (landscape and portrait) */
+@media (min-width: 768px) and (max-width: 991px) {
+  /* Styles for small tablets */
+}
+
+/* Large tablets (landscape and portrait) */
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* Styles for large tablets */
+}
+
+/* Small laptops and desktops */
+@media (min-width: 1200px) and (max-width: 1439px) {
+  /* Styles for small laptops and desktops */
+}
+
+/* Large laptops and desktops */
+@media (min-width: 1440px) and (max-width: 1919px) {
+  /* Styles for large laptops and desktops */
+}
+
+
+
+
