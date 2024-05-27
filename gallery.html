@@ -4,22 +4,83 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/gallery.css">
-    <title>Document</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+	<link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <title>Gallery</title>
 </head>
 <body>
-<main>
-	<nav>
+
+	<a href="https://wa.me/YOURNUMBER" class="whatsapp-float" target="_blank">
+		<i class="fab fa-whatsapp"></i>
+	  </a>
+	
+	  <div class="rotate" onclick="openPopup()">
+		<a href="javascript:void(0)" class="admission-open" > 
+		  <span class="rotated-text">Admission Open</span>
+		</a>
+	  </div>
+	  <div id="popup" class="popup">
+		<div class="popup-content">
+			<span class="close" onclick="closePopup()">&times;</span>
+			<h2>Contact Us</h2>
+			<form id="contact-form" action="#" method="post">
+			  <label for="fullName">Full Name</label>
+			  <input type="text" id="fullName" name="fullName" required>
+	  
+			  <label for="email">Email Address</label>
+			  <input type="email" id="email" name="email" required>
+	  
+			  <label for="phoneNumber">Contact Number</label>
+			  <input type="tel" id="phoneNumber" name="phoneNumber" required>
+	  
+			  <label for="courses">Select Courses applying for</label>
+			  <select id="courses" name="courses" required>
+				  <option value="">Select</option>
+				  <option value="Diploma">Diploma</option>
+				  <option value="PG">PG</option>
+				  <option value="UG">UG</option>
+			  </select>
+			  <label for="courses">Select Department</label>
+			  <select id="courses" name="courses" required>
+				  <option value="">Select</option>
+				  <option value="Engineering">Engineering </option>
+				  <option value="Pharmacy">Pharmacy</option>
+				  <option value="Management">Management</option>
+			  </select>
+			  
+			  <label for="courses">Select Specialization</label>
+			  <select id="courses" name="courses" required>
+				  <option value="">Select</option>
+				  <option value="Computer Science andEngineering">Computer Science andEngineering</option>
+				  <option value="Computer Science andEngineering(Cyber Security)">Computer Science andEngineering(Cyber Security)</option>
+				  <option value="Computer Science andEngineering(Data Science)">Computer Science andEngineering(Data Science)</option>
+				  <option value="Mechanical Engineering">Mechanical Engineering</option>
+				  <option value="Civil Engineering">Civil Engineering</option>
+	
+			  </select>
+			  
+			  
+	  
+			  <button class="submit" type="submit">Submit</button>
+			</form>
+		</div>
+	  </div>
+	
+	  <!-- ----------------------------- -->
+	  
+	  <nav>
 		<div class="navbar">
 		  <i class='bx bx-menu'></i>
-		  <div class="logo"><a href="html\index.html"><img src="assests/logo.webp"></a><p>DBSR</p></div>
+		  <div class="logo"><a href="index.html"><img src="assests/logo.webp"></a><p>DBSR</p></div>
 	
 		  <div class="nav-links">
 			<ul class="links">
 				<li>
-					<a href="#">About</a>
-					<i class='bx bxs-chevron-down js-arrow arrow '></i>
+					<a href="">About</a>
+					<!-- <i class='bx bxs-chevron-down js-arrow arrow '></i> -->
 					<ul class="js-sub-menu sub-menu">
-					  <li><a href="#">Our College</a></li>
+					  <li><a href="about.html">Our College</a></li>
+					  <li><a href="gallery.html">Gallery</a></li>
 					  <li><a href="#">Infrastructure</a></li>
 					  <li><a href="#">Facilities</a></li>
 					  <li><a href="#">Committees</a></li>
@@ -27,7 +88,7 @@
 				  </li>
 				  <li>
 					<a href="#">Department</a>
-					<i class='bx bxs-chevron-down js-arrow arrow '></i>
+					<!-- <i class='bx bxs-chevron-down js-arrow arrow '></i> -->
 					<ul class="js-sub-menu sub-menu">
 					  <li><a href="#">CSE</a></li>
 					  <li><a href="#">Civil</a></li>
@@ -37,7 +98,7 @@
 				  </li>
 			  <li>
 				<a href="#">Admission</a>
-				<i class='bx bxs-chevron-down js-arrow arrow '></i>
+				<!-- <i class='bx bxs-chevron-down js-arrow arrow '></i> -->
 				<ul class="js-sub-menu sub-menu">
 				  <li><a href="#">Admission-process</a></li>
 				  <li><a href="#">Admission Enquery</a></li>
@@ -47,7 +108,7 @@
 			  </li>
 			  <li>
 				<a href="#">Placemets</a>
-				<i class='bx bxs-chevron-down js-arrow arrow '></i>
+				<!-- <i class='bx bxs-chevron-down js-arrow arrow '></i> -->
 				<ul class="js-sub-menu sub-menu">
 				  <li><a href="#">Career Development Cell</a></li>
 				  <li><a href="#">Clubs</a></li>
@@ -57,7 +118,7 @@
 			  </li>
 			  <li>
 				<a href="#">Alumni</a>
-				<i class='bx bxs-chevron-down js-arrow arrow '></i>
+				<!-- <i class='bx bxs-chevron-down js-arrow arrow '></i> -->
 				<ul class="js-sub-menu sub-menu">
 				  <li><a href="#">About Alumni</a></li>
 				  <li><a href="#">Alumni Affairs</a></li>
@@ -67,7 +128,7 @@
 			  </li>
 			  <li>
 				<a href="#"> Login</a>
-				<i class='bx bxs-chevron-down js-arrow arrow '></i>
+				<!-- <i class='bx bxs-chevron-down js-arrow arrow '></i> -->
 				<ul class="js-sub-menu sub-menu">
 				  <li><a href="#">Employee Login</a></li>
 				  <li><a href="#">Student Login</a></li>
@@ -77,12 +138,7 @@
 			  </li>
 			</ul>
 		  </div>
-		  <div class="search-box">
-			<i class='bx bx-search'></i>
-			<div class="input-box">
-			  <input type="text" placeholder="Search...">
-			</div>
-		  </div>
+		
 		</div>
 	  </nav>
 	  <section>
@@ -122,6 +178,7 @@
 			  </div>
 			</div>
 			 
+	
 		  
 			  <div class="slider">
 				<div class="slide-track">
@@ -173,7 +230,8 @@
 			<p>
 			  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati dignissimos reprehenderit voluptas commodi laudantium sint, facere ipsa distinctio dicta quod, aut, explicabo sit animi eos. Quae, quis accusamus? Exercitationem, iusto!
 			</p>
-			<button>Sign Up!</button>
+			<button class="signup"> Register Now
+			</button>
 		  </div>
 		  </div>
 		  <svg viewBox="0 0 500 200" class="wave" >

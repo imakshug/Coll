@@ -1,3 +1,4 @@
+
 body, 
 html{
   width:100%;
@@ -6,15 +7,37 @@ html{
   margin: 0px;
   overflow-x: hidden;
   font-family: 'Poppins', sans-serif;
-  background-color: aliceblue;
+  background-color: #fff;
+  
   
 }    
+.html{
+  scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+  display: none; 
+}
+
 
 :root{
-    --bg-color: rgb(1,0,40);
-    --text-color: #ffffff
+  --bg-color: rgb(1,0,40);
+  --text-color: #ffffff
+}
+
+.i{
+  color:white;
+}
+
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    
   }
-nav{
+
+  nav{
     position: fixed;
     top: 0;
     left: 0;
@@ -65,7 +88,8 @@ nav{
   }
   nav .navbar .links{
     display: flex;
-    margin-left: 30%;
+    margin-left: 29%;
+    gap: 2rem;
   }
   nav .navbar .links li{
     position: relative;
@@ -75,6 +99,10 @@ nav{
     list-style: none;
     padding: 0 14px;
   }
+  nav .navbar .links li:hover {
+    background-color:var(--bg-color);
+  }
+  
   nav .navbar .links li a{
     height: 100%;
     text-decoration: none;
@@ -101,9 +129,9 @@ nav{
   nav .navbar .links li .sub-menu{
     position: absolute;
     top: 70px;
-    left: 0;
+    left: -40px;
     line-height: 40px;
-    background:  var(--bg-color);
+    background: white;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
     border-radius: 0 0 4px 4px;
     display: none;
@@ -118,12 +146,16 @@ nav{
     border-bottom: 1px solid rgba(244, 239, 239, 0.1);
   }
   .navbar .links li .sub-menu a{
-    color: #fff;
+    color: var(--bg-color);
     font-size: 15px;
     font-weight: 500;
   }
+  .navbar .links li .sub-menu :hover{
+  color:white;
+  }
   .navbar .links li .sub-menu .more-arrow{
     line-height: 40px;
+  
   }
   .navbar .links li .htmlCss-more-sub-menu{
     line-height: 40px;
@@ -325,7 +357,6 @@ nav{
   } 
   }
   
-
   
   /* -------------------------------- */
   /* main section  */
