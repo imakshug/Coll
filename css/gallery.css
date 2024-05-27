@@ -560,7 +560,7 @@ img {
 }
 
 :root {
-	--adjust-size: 0px; /* 必要に応じて */
+	--adjust-size: 0px; 
 }
 * {
 	margin: 0;
