@@ -647,7 +647,9 @@ img {
 
 
 /* info container */
-
+.hl-container{
+  margin-bottom: 5%;
+}
 .info_container{
   margin-top: -25%;
   text-align: center;
@@ -656,7 +658,7 @@ img {
   margin-bottom: 5%;
 }
 .info_container h1{
-  margin-bottom: 5%;
+  margin-bottom: 2%;
   font-size: 2.5rem;
   color: var(--bg-color);
 }
@@ -666,6 +668,121 @@ img {
   margin:1rem -8rem 0rem -9rem;
 }
 
+/* highlights */
+
+.highlights_container{
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
+
+}
+.highlights_content{
+margin-right :2%; 
+}
+
+
+/* table style */
+
+table {
+  border-spacing: 1;
+  border: 2px solid black;
+  border-collapse: collapse;
+  background: rgb(229, 229, 249);
+  border-radius: 6px;
+  overflow: hidden;
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+table * {
+  position: relative;
+}
+table td,
+table th {
+  padding-left: 8px;
+}
+table thead tr {
+  height: 60px;
+  color: white;
+  background: var(--bg-color);
+  font-size: 16px;
+}
+table tbody tr {
+  height: 48px;
+  border-bottom: 1px solid #E3F1D5;
+}
+table tbody tr:last-child {
+  border: 0;
+}
+table td,
+table th {
+  text-align: left;
+}
+table td.l,
+table th.l {
+  text-align: right;
+}
+table td.c,
+table th.c {
+  text-align: center;
+}
+table td.r,
+table th.r {
+  text-align: center;
+}
+
+@media screen and (max-width: 35.5em) {
+  table {
+    display: block;
+    border: 1px solid black;
+  }
+  table > *,
+  table tr,
+  table td,
+  table th {
+    display: block;
+  }
+  table thead {
+    display: none;
+  }
+  table tbody tr {
+    height: auto;
+    padding: 8px 0;
+  }
+  table tbody tr td {
+    padding-left: 45%;
+    margin-bottom: 12px;
+  }
+  table tbody tr td:last-child {
+    margin-bottom: 0;
+  }
+  table tbody tr td:before {
+    position: absolute;
+    font-weight: 700;
+    width: 40%;
+    left: 10px;
+    top: 0;
+  }
+  table tbody tr td:nth-child(1):before {
+    content: "Code";
+  }
+  table tbody tr td:nth-child(2):before {
+    content: "Stock";
+  }
+  table tbody tr td:nth-child(3):before {
+    content: "Cap";
+  }
+  table tbody tr td:nth-child(4):before {
+    content: "Inch";
+  }
+  table tbody tr td:nth-child(5):before {
+    content: "Box Type";
+  }
+}
 
 /* brush section */
 .hero{
@@ -857,7 +974,7 @@ img {
 
   /* events */
 .events-main h1{ 
-  margin-bottom: 5%;
+  margin-bottom: 2%;
   text-align: center;
   justify-content: center;
   font-size: 3rem;
@@ -899,7 +1016,6 @@ img {
   figure {
     margin: 0;
     padding: 0;
-    aspect-ratio: 16 / 9;
     overflow: hidden;
   }
   
@@ -1007,94 +1123,7 @@ img {
     width: 1px;
   }
 
-  /* student testimonial */
 
-  .students-testimonial h1{ 
-    margin-bottom: 5%;
-    text-align: center;
-    justify-content: center;
-    font-size: 3rem;
-  }
-  *,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-.students-testimonial-main {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.students-testimonial-cards {
-  display: grid;
-  grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.students-testimonial-cards_item {
-  display: flex;
-  padding: 1rem;
-}
-
-.students-testimonial-card_image {
-  height: calc(13*1.2rem);
-  padding: 1.2rem 1.2rem 0;
-  position:relative;
-}
-.students-testimonial-card_image:before,
-.students-testimonial-card_image:after{
-  content: "";
-  position: absolute;
-  width: 20px;
-  left: 60%;
-  top: 0;
-  height: 45px;
-  background: #e6e6e6b8;
-  transform: rotate(45deg);
-}
-.students-testimonial-card_image:after{
-  transform: rotate(-45deg);
-  top:auto;
-  bottom:-22px;
-  left:40%;
-}
-.students-testimonial-card_image img {
-  width:100%;
-  height:100%;
-  object-fit:cover;
-}
-
-.students-testimonial-cards_item {
-  filter:drop-shadow(0 0 5px rgba(0, 0, 0, 0.25));
-}
-
-
-.students-testimonial-card {
-  background-color: white;
-  border-radius: 0.25rem;
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-  padding-left: 30px;
-  background: repeating-linear-gradient(#0000 0 calc(1.2rem - 1px),#66afe1 0 1.2rem) right bottom /100% 100%,linear-gradient(red 0 0) 30px 0/2px 100% #fff;
-  background-repeat: no-repeat;
-  line-height: 1.2rem;
-  -webkit-mask:radial-gradient(circle .8rem at 2px 50%,#0000 98%,#000)0 0/100% 2.4rem;
-}
-
-.students-testimonial-card_content {
-  padding: 1.2rem;
-}
-
-h2.students-testimonial-card_title,p {
-  margin: 1.2rem 0;
-}
-h2.students-testimonial-card_title {
-    font-size: 1.3em;
-}
 
 /* animator-class */
 @import url('https://fonts.googleapis.com/css?family=Ubuntu:400,700&display=swap');
@@ -1106,11 +1135,18 @@ h2.students-testimonial-card_title {
 .animator-section {
   padding:0;
   margin:0;
-  height:100vh;
+  /* height:100vh; */
   display:grid;
   align-items:center;
   font-family:'Ubuntu';
 }
+
+.animator-section h1{ 
+  text-align: center;
+  justify-content: center;
+  font-size: 3rem;
+}
+
 .animator-section-container {
   max-width:1200px;
   margin:auto;
@@ -1207,7 +1243,7 @@ h2.students-testimonial-card_title {
 .animator-section-item:hover .animator-section-card  .animator-section-circle2 {
   clip-path: circle(0.0% at 35% 20%);
 }
-img {
+.animator-section-card img {
   max-width:100%;
   position:absolute;
   z-index:3;
