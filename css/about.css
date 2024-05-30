@@ -1271,6 +1271,7 @@ button {
 
 
 
+
 /* contactus */
 
 .container {
@@ -1379,7 +1380,6 @@ button {
 }
 
 .contactus-section ::placeholder {
-  font-family: 'Quicksand', sans-serif;
   font-weight: 600;
   font-size: 1.1rem;
   color: #838788;
@@ -1389,7 +1389,6 @@ button {
 
 .contactus-section input,
 .contactus-section textarea {
-  font-family: 'Quicksand', sans-serif;
   color: #212529;
   font-size: 1.1rem;
 }
@@ -1403,7 +1402,6 @@ button {
 }
 
 .btn.btn-primary {
-  font-family: 'Quicksand', sans-serif;
   font-weight: bold;
   height: 3.5rem;
   line-height: 2.5rem;
@@ -1421,6 +1419,7 @@ button {
   background-size: 100% 100%;
   transform: translateY(-0.15em);
 }
+
 
 
   /* ------------footer--------------- */
