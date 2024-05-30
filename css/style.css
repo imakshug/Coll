@@ -573,58 +573,69 @@ img {
 
 .item:nth-child(1) {
   background-color: #67d7e1;
-  border-radius: 50% 50% 0 50%;
-  margin-top: 0.5rem;
+  border-radius: 20% 20% 20% 20%;
+
+  /* margin-top: 0.5rem; */
 }
 
 .item:nth-child(2) {
-  border-radius: 50% 50% 50% 0%;
+  border-radius: 20% 20% 20% 20%;
+
 }
 
 .item:nth-child(3) {
   background-color: #7da0ca;;
-  border-radius: 50%;
+  border-radius: 20% 20% 20% 20%;
+
 }
 
 .item:nth-child(4) {
-  border-radius: 0 0 0 50%;
+  border-radius: 20% 20% 20% 20%;
+
 }
 
 .item:nth-child(5) {
-  border-radius: 50% 0% 50% 50%;
+  border-radius: 20% 20% 20% 20%;
+
 }
 
 .item:nth-child(6) {
   background-color: #b8e2f4;
-  border-radius: 0 49% 0% 50%;
+  border-radius: 20% 20% 20% 20%;
+
 }
 
 .item:nth-child(7) {
-  border-radius: 0% 50% 0 50%;
+  border-radius: 20% 20% 20% 20%;
+
 }
 
 .item:nth-child(8) {
   background-color: #58afdd;
-  border-radius: 50% 54% 54% 0%;
-  margin-top: 0.8rem;
+  border-radius: 20% 20% 20% 20%;
+
+  /* margin-top: 0.8rem; */
 }
 
 .item:nth-child(9) {
   background-color: #90cbf9;
-  border-radius: 0% 50% 0% 0%;
+  border-radius: 20% 20% 20% 20%;
+
 }
 
 .item:nth-child(10) {
-  border-radius: 50%;
+  border-radius: 20% 20% 20% 20%;
+
 }
 
 .item:nth-child(11) {
   background-color: #7da0ca;
-  border-radius: 50% 0 50% 50%;
+  border-radius: 20% 20% 20% 20%;
+
 }
 
 .item:nth-child(12) {
-  border-radius: 0% 49% 48% 50%;
+  border-radius: 20% 20% 20% 20%;
 }
 
 @keyframes fadeIn {
@@ -874,6 +885,11 @@ img {
   user-select: none;
 }
 
+
+/* ---------------------------------------- */
+/* faculty */
+
+/* ------testimonial  close-------*/
 /* ------------------------------------------------------------- */
 
 /* home main */
@@ -1385,7 +1401,8 @@ span.text {
   }
 }
 
-
+/* ------------------------------------------------ */
+/* ----------------------------------------------------- */
 /* contactus */
 
 .container {
