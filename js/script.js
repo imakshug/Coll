@@ -314,3 +314,8 @@ Related works :
 Portforio design @wakana-k - https://codepen.io/wakana-k/pen/BaxKKvE
 Swaying photo gallery - hover event @wakana-k - https://codepen.io/wakana-k/pen/oNJxbPw
 */
+
+
+
+// contact us
+ feather.replace();
