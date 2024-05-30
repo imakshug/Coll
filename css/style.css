@@ -834,8 +834,6 @@ img {
 }
 
 
-/* ----------------- */
-/* why */
 /* ----------------------- */
 /* brush section */
 .hero{
@@ -876,7 +874,7 @@ img {
   width:100%;
 }
 
-
+/* course */
 /* ----------------------------------------------------- */
 
 img {
@@ -885,14 +883,6 @@ img {
   user-select: none;
 }
 
-
-/* ---------------------------------------- */
-/* faculty */
-
-/* ------testimonial  close-------*/
-/* ------------------------------------------------------------- */
-
-/* home main */
 
 
 /* card */
@@ -1788,32 +1778,7 @@ span.text {
     text-decoration: none;
 }
 
-
-
-
-
-
-
-/* Media Query For different screens */
-@media (min-width:320px) and (max-width:479px)  { /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
-  .footer-content {
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 1230px;
-    padding: 40px 15px 1050px;
-    position: relative;
-  }
-}
-@media (min-width:480px) and (max-width:599px)  { /* smartphones, Android phones, landscape iPhone */
-  .footer-content {
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 1230px;
-    padding: 40px 15px 1050px;
-    position: relative;
-  }
-}
-@media (min-width:600px) and (max-width: 800px)  { /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
+@media (min-width:640px) and (max-width: 767px)  { /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
   .footer-content {
     margin-left: auto;
     margin-right: auto;
@@ -1852,15 +1817,161 @@ span.text {
       width: 24.99%;
   }
 }
-@media (min-width: 568px) {
-  /* .footer-content-column {
-      width: 49.99%;
-  } */
+
+
+
+/* media query */
+@media (max-width: 320px) {
+  /* home */
+  .home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    width: 100%;
+    height: auto;
+  }
+
+  .main_heading {
+    margin: 0;
+    padding: 1rem;
+  }
+  .main_home h1 {
+    font-size: 25px;
+    width: 85%;
+    margin-bottom: 2%;
+}
+
+.main_home p {
+  font-size: 1rem;
+  width: 85%;
+  margin-bottom: 2%;
+}
+
+  .slider {
+    display: none;
+  }
+.item{
+  display: none;
+}
+.info_container{
+  height: auto;
+}
+.info_container h1 {
+  margin-bottom: 5%;
+  font-size: 1.5rem;
+}
+.info_container p { 
+  font-size: 0.9rem; 
+   margin: 0rem 1rem 0rem 0rem; }
+
+   .count {
+    width: 100%;
+    height: 35vmin;
+    font-size: 8px;
+}
+/* brush */
+.hero h1 {
+  font-size: 1.75rem;
+  margin-top: 10%;
+  margin-top: 12%;
+  margin-left: 0%;
+  margin-bottom: 10%;
+}
+.ag-courses_box {
+  margin-bottom: 2%;
+  margin-top:36%;
+}
+
+.hero {
+  height: auto;
+}
+  .footer-content {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1230px;
+    padding: 40px 15px 1050px;
+    position: relative;
+  }
 }
 
 
-/* Extra small devices (portrait phones, less than 321px) */
-@media (max-width: 320px) {
+
+/* Media Query For different screens */
+@media (min-width:321px) and (max-width:479px)  { /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
+  .home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    width: 100%;
+    height: auto;
+  }
+
+  .main_heading {
+    margin: 0;
+    padding: 1rem;
+  }
+  .main_home h1 {
+    font-size: 25px;
+    width: 85%;
+    margin-bottom: 2%;
+}
+
+.main_home p {
+  font-size: 1rem;
+  width: 85%;
+  margin-bottom: 2%;
+}
+
+  .slider {
+    display: none;
+  }
+.item{
+  display: none;
+}
+.info_container{
+  height: auto;
+}
+.info_container h1 {
+  margin-bottom: 5%;
+  font-size: 1.5rem;
+}
+.info_container p { 
+  font-size: 0.9rem; 
+   margin: 0rem 1rem 0rem 0rem; }
+
+   .count {
+    width: 100%;
+    height: 35vmin;
+    font-size: 8px;
+}
+
+/* brush */
+.hero h1 {
+  font-size: 1.75rem;
+  margin-top: 10%;
+  margin-top: 12%;
+  margin-left: 0%;
+  margin-bottom: 10%;
+}
+.ag-courses_box {
+  margin-bottom: 2%;
+  margin-top:36%;
+}
+
+.hero {
+  height: auto;
+}
+  .footer-content {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1230px;
+    padding: 40px 15px 1050px;
+    position: relative;
+  }
+}
+@media (min-width:480px) and (max-width:639px)  { /* smartphones, Android phones, landscape iPhone */
   .home {
     display: flex;
     flex-direction: column;
@@ -1905,4 +2016,55 @@ span.text {
     height: 35vmin;
     font-size: 8px;
 }
+
+/* brush */
+.hero h1 {
+  font-size: 1.75rem;
+  margin-top: 10%;
+  margin-top: 12%;
+  margin-left: 0%;
+  margin-bottom: 10%;
 }
+.ag-courses_box {
+  margin-bottom: 2%;
+  margin-top:36%;
+}
+
+.hero {
+  height: auto;
+}
+  .footer-content {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1230px;
+    padding: 40px 15px 1050px;
+    position: relative;
+  }
+}
+
+
+/* Large mobile devices (landscape and portrait) */
+@media (min-width: 640px) and (max-width: 767px) {
+  /* Styles for large mobile devices */
+}
+
+/* Small tablets (landscape and portrait) */
+@media (min-width: 768px) and (max-width: 991px) {
+  /* Styles for small tablets */
+}
+
+/* Large tablets (landscape and portrait) */
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* Styles for large tablets */
+}
+
+/* Small laptops and desktops */
+@media (min-width: 1200px) and (max-width: 1439px) {
+  /* Styles for small laptops and desktops */
+}
+
+/* Large laptops and desktops */
+@media (min-width: 1440px) and (max-width: 1919px) {
+  /* Styles for large laptops and desktops */
+}
+
