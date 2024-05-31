@@ -79,6 +79,18 @@ Swaying photo gallery - hover event @wakana-k - https://codepen.io/wakana-k/pen/
 
 
 
+function openPopup() {
+  document.getElementById("contactus-popup").style.display = "block";
+}
+
+function closePopup() {
+  document.getElementById("contactus-popup").style.display = "none";
+}
+
+function toggleMenu() {
+  var navbar = document.getElementById("navbar");
+  navbar.style.display = navbar.style.display === "none" ? "flex" : "none";
+}
 
 
 
