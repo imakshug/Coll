@@ -971,62 +971,128 @@ img {
 /* ---------------------------------------------------- */
 /* .message */
 
-.testimonial-content {
-  max-width: 1199px;
+.faculty{
+  width: 95%;
+    border-radius: 5rem 5rem 5rem 5rem;
+    background-color: var(--bg-color);
+    margin: 0rem 0rem 0rem 3rem;
+}
+.container {
+  width: 95%;
+  max-width: 1140px;
   margin: auto;
-  text-align: center;
-  padding: 100px 0;
 }
 
-.testimonial-thumbs .testimonial-pic img {
-  width: 80px;
-  height: 80px;
-  border-radius: 100%;
-  padding: 4px;
+.card {
+  padding: 10px;
+  /* background: var(--bg-color); */
+  /* background: linear-gradient(38deg, rgba(229, 228, 252, 1), rgb(255, 255, 255) 51%); */
+  margin-bottom: 20px;
+  
+  /* border: none; */
+}
+/* .flex-row{
+  background-color: var(--bg-color);
+} */
+.card-info-inner h2{
+  margin: 3rem 0rem 3rem 14rem
+}
+.card-info-inner p{
+  font-size: 1.5rem;
+  margin: -2rem 1rem 0rem 4rem;
+  text-align: justify;
+}
+.card-image {
   position: relative;
-  z-index: 2;
-  background-color: pink;
-}
-
-.testimonial-thumbs {
-  width: 300px;
-  margin: auto;
-  box-sizing: border-box;
-  height: 170px;
-  position: relative;
-}
-
-.testimonial-comment {
-  min-height: 300px;
-  width: 100%;
-}
-
-.testimonial-comment .swiper-wrapper {
-  padding-bottom: 20px;
-}
-
-.testimonial-thumbs .testimonial-pic {
-  padding: 30px 0 0;
-  transition: all 0.5s;
-}
-
-.testimonial-thumbs .swiper-slide-thumb-active .testimonial-pic {
-  padding: 0 0 40px;
-}
-
-.testimonial-text {
-  padding: 30px;
-  text-align: center;
-  box-shadow: 0 20px 50px 0 rgb(0 0 0 / 10%);
-  margin: 20px 100px;
+  overflow: hidden;
   border-radius: 10px;
-  background-color: #fff;
-  max-width: 770px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 
+
+@keyframes scaleAnim {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5) rotate(360deg);
+  }
+  100% {
+    transform: scale(1) rotate(0deg);
+  }
+}
+
+.card-bg-img {
+  filter: blur(50px);
+  width: 20rem;
+  height: 25rem;
+}
+
+.flex-row > div {
+  min-width: 380px;
+}
+.flex-row{
+  background-color: #006eff;
+}
+.profile-img {
+  /* position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0; */
+  width: 31rem;
+  margin: -21rem 0rem 0rem 0rem;
+  /* border: 2px solid white; */
+}
+
+.profile-img img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+
+@media screen and (max-width: 1060px) and (min-width: 900px) {
+  h2 {
+    font-size: 20px;
+  }
+  p {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 899px) and (min-width: 768px) {
+  .flex-row > div {
+    min-width: 150px;
+  }
+  h2 {
+    font-size: 16px;
+  }
+  p {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 767px) and (min-width: 521px) {
+  .grid-row {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 520px) and (min-width: 200px) {
+  .grid-row,
+  .flex-row {
+    display: block;
+  }
+  .card-bg-img img {
+    max-width: unset;
+  }
+  .card-info-inner {
+    display: block;
+    margin-top: 10px;
+  }
+}
 /* ------------------------------------------------------------- */
 
 /* home main */
@@ -1452,7 +1518,7 @@ img {
 .counting{
   position: relative;
   height:10rem;
-  margin-bottom: 10rem;
+  margin-bottom: 7rem;
   margin-top: 9rem;
 }
 
