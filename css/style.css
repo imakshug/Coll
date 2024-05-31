@@ -55,6 +55,7 @@ body::-webkit-scrollbar {
 .whatsapp-float:hover {
   transform: scale(1.1);
   background-color: #20b358;
+  text-decoration: none;
 }
 .admission-open {
   position: fixed;
@@ -62,7 +63,7 @@ body::-webkit-scrollbar {
   height: 205px;
   bottom: 259px;
   right: 0px;
-  background-color: #6e1b1b;
+  background-color: #1b586c;
   color: #FFF;
   border-radius: 20px 0px 0px 20px;
   font-size: 20px;
@@ -77,6 +78,8 @@ body::-webkit-scrollbar {
 .admission-open:hover {
   transform: scale(1.1);
   background-color: #3e0000;
+  text-decoration: none;
+  color:white;
 }
 
 .rotated-text {
@@ -109,10 +112,11 @@ body::-webkit-scrollbar {
     border-radius: 6px;
     max-width: 500px;
     width: 100%;
-    height:49rem;
+    height: 53rem;
     text-align: center;
     font-size: 18px;
 }
+
 
 /* #contact-form{
   height:10rem;
@@ -129,7 +133,7 @@ body::-webkit-scrollbar {
 
 label {
   display: block; 
-  text-align: left;
+  margin-left:-9rem;
   margin-bottom: 10px; 
   font-weight: bold;
   color: var(--bg-color);
@@ -139,7 +143,7 @@ label {
 
 .close {
   position: absolute;
-  top: 10px;
+  top: 3rem;
   right: 40px;
   cursor: pointer;
   font-size: 44px;
@@ -907,15 +911,35 @@ img {
   margin-bottom: 5%;
 }
 .info_container h1{
-  margin-bottom: 5%;
+ margin: 6rem 0rem -14rem 0rem;
   font-size: 2.5rem;
   color: var(--bg-color);
 }
 .info_container p{
   font-size:1.5rem;
   text-align: justify;
-  margin:1rem -11rem 0rem -9rem;
+  margin:16rem -11rem -11rem -9rem;
 }
+.typewriter-text {
+  display: inline-block;
+  border-right: 2px solid black;
+  white-space: nowrap;
+  overflow: hidden;
+  /* font-family: monospace; */
+  /* letter-spacing: 0.15em; Adjust this for spacing between letters */
+  animation: typing 6s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent; }
+  50% { border-color: black; }
+}
+
 
 
 /* brush section */
@@ -969,129 +993,199 @@ img {
 
 /* ---------------------------------------------------- */
 /* .message */
+@import url("https://fonts.googleapis.com/css?family=Montserrat:600");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:800");
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+body {
+ 
 
+  animation: backgroundAnimation 10s ease infinite;
+
+
+}
 .faculty{
-  width: 95%;
-    border-radius: 5rem 5rem 5rem 5rem;
-    background-color: var(--bg-color);
-    margin: 0rem 0rem 0rem 3rem;
-}
-.container {
-  width: 95%;
-  max-width: 1140px;
-  margin: auto;
+  margin:2rem -120rem 0rem 0rem
 }
 
-.card {
-  padding: 10px;
-  /* background: var(--bg-color); */
-  /* background: linear-gradient(38deg, rgba(229, 228, 252, 1), rgb(255, 255, 255) 51%); */
-  margin-bottom: 20px;
-  
-  /* border: none; */
-}
-/* .flex-row{
-  background-color: var(--bg-color);
-} */
-.card-info-inner h2{
-  margin: 3rem 0rem 3rem 14rem
-}
-.card-info-inner p{
-  font-size: 1.5rem;
-  margin: -2rem 1rem 0rem 4rem;
-  text-align: justify;
-}
-.card-image {
+.profile {
+  animation: loadProfile 0.6s ease-in-out;
+  animation-fill-mode: both;
+  font-size: 0.9rem;
+  display: flex;
+  flex-direction: column;
   position: relative;
-  overflow: hidden;
-  border-radius: 10px;
+  max-height: 750px;
+ margin:  10rem 17rem 20rem 37rem;
+  max-width: 900px;
+  margin-left: 19%;
+    margin-right: 0%;
 }
 
+.profile-bg {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border-radius: 10px;
+  background: white;
+  box-shadow: 0 30px 50px -20px var(--bg-color);
+  width: calc(100% - 75px);
+  height: calc(100% - -44px);
+  margin: -27rem 0rem -6rem 0rem;
+  z-index: -1;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  width: 100%;
+} 
+
+.profile-image {
+  animation: loadProfileImage 1s ease-in-out 0.5s;
+  animation-fill-mode: both;
+  position: relative;
+  border-radius: 10px;
+  box-shadow: 0 25px 45px -20px var(--bg-color),
+    inset 0 0px 120px var(--bg-color);
+    width: 31%;
+  flex: none;
+  background-image: url("https://zephyo.github.io/22Days/code/3/graphics/profile.png");
+  background-size: cover;
+  background-position: center;
+  margin:3rem 0rem -4rem 0rem;
+}
+
+.profile-image::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  background-color: var(--bg-color);
+  opacity: 0.8;
+  mix-blend-mode: screen;
+}
+
+.camera {
+  color: #FFFF;
+  position: absolute;
+  bottom: 28px;
+  left: 28px;
+  font-size: 1.3rem;
+}
+
+.profile-info {
+  margin-top: 120px;
+  padding: 8% 8% 2% 8%;
+  position: relative;
+}
+
+.profile-info h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  margin: 0.7rem;
+  position: absolute;
+  animation-fill-mode: both;
+}
+
+h1.first-name {
+  animation: titleEffect 1s cubic-bezier(0,0.2,0.4,1);
+ 
+  color:var(--bg-color);
+  top: -72px;
+  left: 48px;
+    font-size: 2rem;
+} 
 
 
-@keyframes scaleAnim {
+
+
+
+
+.profile-info h2 {
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.2rem;
+ margin: -5rem 0rem 1rem 0rem;
+}
+
+@media only screen and (max-aspect-ratio: 4/7) and (max-width: 600px) {
+  .profile {
+    margin: 3%;
+    height: 97%;
+  }
+  .container {
+    height: 86%;
+    flex-direction: column;
+  }
+  .profile-image {
+    height: 40%;
+    width: calc(100% - 90px);
+  }
+  .profile-bg {
+    width: 100%;
+  }
+  h1.first-name {
+    left: 10px;
+  }
+  h1.second-name {
+    left: 60px;
+  }
+}
+
+@media screen and (min-aspect-ratio: 4/7) {
+  .profile {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+}
+
+@keyframes backgroundAnimation {
   0% {
-    transform: scale(1);
+    background-position: 0% 50%;
   }
   50% {
-    transform: scale(1.5) rotate(360deg);
+    background-position: 100% 50%;
   }
   100% {
-    transform: scale(1) rotate(0deg);
+    background-position: 0% 50%;
   }
 }
 
-.card-bg-img {
-  filter: blur(50px);
-  width: 20rem;
-  height: 25rem;
-}
-
-.flex-row > div {
-  min-width: 380px;
-}
-.flex-row{
-  background-color: #006eff;
-}
-.profile-img {
-  /* position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0; */
-  width: 31rem;
-  margin: -21rem 0rem 0rem 0rem;
-  /* border: 2px solid white; */
-}
-
-.profile-img img {
-  display: block;
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-}
-
-
-@media screen and (max-width: 1060px) and (min-width: 900px) {
-  h2 {
-    font-size: 20px;
+@keyframes loadProfile {
+ from{
+    transform: translateY(100px);
+    opacity: 0;
   }
-  p {
-    font-size: 14px;
+ to {
+     transform: translateY(0px);
+    opacity: 1;
   }
 }
 
-@media screen and (max-width: 899px) and (min-width: 768px) {
-  .flex-row > div {
-    min-width: 150px;
+@keyframes loadProfileImage {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
   }
-  h2 {
-    font-size: 16px;
-  }
-  p {
-    font-size: 12px;
-  }
-}
-
-@media screen and (max-width: 767px) and (min-width: 521px) {
-  .grid-row {
-    display: block;
+ to {
+     transform: translateY(0px);
+    opacity: 1;
   }
 }
 
-@media screen and (max-width: 520px) and (min-width: 200px) {
-  .grid-row,
-  .flex-row {
-    display: block;
+@keyframes titleEffect {
+ from {
+   opacity:0;
+     transform: translateX(-75px);
   }
-  .card-bg-img img {
-    max-width: unset;
-  }
-  .card-info-inner {
-    display: block;
-    margin-top: 10px;
+  to {
+     transform: translateX(0px);
+    opacity: 1;
   }
 }
+
 /* ------------------------------------------------------------- */
 
 /* home main */
@@ -1192,7 +1286,7 @@ img {
   transition: all .5s ease;
 }
 .ag-courses_item:nth-child(2n) .ag-courses-item_bg {
-  background-color: #3ecd5e;
+  background-color:var(--bg-color);
 }
 .ag-courses_item:nth-child(3n) .ag-courses-item_bg {
   background-color: #e44002;
@@ -1204,7 +1298,7 @@ img {
   background-color: #cd3e94;
 }
 .ag-courses_item:nth-child(6n) .ag-courses-item_bg {
-  background-color: #4c49ea;
+    background-color: #39a3c1;
 }
 
 
@@ -1472,8 +1566,10 @@ img {
 .course_card h1 {
   position: absolute;
   z-index: 1;
+ font-size: 1.8rem;
   color: var(--text-color);
   text-align: center;
+ 
 }
 
 .course_card:before {
@@ -1506,6 +1602,7 @@ img {
   text-decoration: none; 
   transition: all 0.6s ease-out;
   color: var(--text-color);
+  
 }
 
 .course_card:hover img{
@@ -1517,8 +1614,9 @@ img {
 .counting{
   position: relative;
   height:10rem;
-  margin-bottom: 7rem;
-  margin-top: 9rem;
+  margin-bottom: 11rem;
+  margin-top: 15rem;
+
 }
 
 .count {
@@ -1601,107 +1699,6 @@ span.text-1 {
     height: 25vmin;
     font-size: 8px;
   }
-}
-
-
-/* contactus */
-
-.contactus-form {
-  width: 340px;
-  height: 520px;
-  background: #ffffff;
-  border-radius: 8px;
-  /* box-shadow: 0 0 40px -10px #000; */
-  /* margin: calc(50vh - 220px) auto; */
-  padding: 20px 30px;
-  max-width: calc(100vw - 40px);
-  box-sizing: border-box;
-  position: relative;
-}
-
-.contactus-form h2 {
-  margin: 10px 0;
-  padding-bottom: 10px;
-  width: 180px;
-  color: var(--bg-color);
-  border-bottom: 3px solid var(--bg-color);
-}
-
-.contactus-form input {
-  width: 100%;
-  padding: 10px;
-  box-sizing: border-box;
-  background: none;
-  outline: none;
-  resize: none;
-  border: 0;
-  transition: all 0.3s;
-  border-bottom: 2px solid var(--bg-color);
-}
-
-.contactus-form input:focus {
-  border-bottom: 2px solid var(--bg-color);
-}
-
-.contactus-form p:before {
-  content: attr(type);
-  display: block;
-  margin: 28px 0 0;
-  font-size: 14px;
-  color: var(--bg-color);
-}
-
-.contactus-form button {
-  float: right;
-  padding: 8px 12px;
-  margin: 8px 0 0;
-  border: 2px solid var(--bg-color);
-  background: 0;
-  color: var(--bg-color);
-  cursor: pointer;
-  transition: all 0.3s;
-  margin-top: 12%;
-}
-
-.contactus-form button:hover {
-  background: var(--bg-color);
-  color: #fff;
-}
-
-.contactus-popup {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: rgba(0, 0, 0, 0.4);
-  padding-top: 60px;
-}
-
-.contactus-popup-content {
-  background-color: #fefefe;
-  margin: 5% auto;
-  padding: 20px;
-  border: 1px solid #888;
-  width: 80%;
-  max-width: 400px;
-}
-
-.contactus-close {
-  color: #aaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.contactus-close:hover,
-.contactus-close:focus {
-  color: black;
-  text-decoration: none;
-  cursor: pointer;
 }
 
 

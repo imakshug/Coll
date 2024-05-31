@@ -1,4 +1,3 @@
-
 /* Googlefont Poppins CDN Link */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 
@@ -43,7 +42,7 @@ body::-webkit-scrollbar {
   color: #FFF;
   border-radius: 50px;
   text-align: center;
-  font-size: 40px;
+  font-size: 30px;
   box-shadow: 2px 2px 3px #999;
   z-index: 1000;
   display: flex;
@@ -56,6 +55,7 @@ body::-webkit-scrollbar {
 .whatsapp-float:hover {
   transform: scale(1.1);
   background-color: #20b358;
+  text-decoration: none;
 }
 .admission-open {
   position: fixed;
@@ -63,7 +63,7 @@ body::-webkit-scrollbar {
   height: 205px;
   bottom: 259px;
   right: 0px;
-  background-color: #6e1b1b;
+  background-color: #1b586c;
   color: #FFF;
   border-radius: 20px 0px 0px 20px;
   font-size: 20px;
@@ -78,6 +78,8 @@ body::-webkit-scrollbar {
 .admission-open:hover {
   transform: scale(1.1);
   background-color: #3e0000;
+  text-decoration: none;
+  color:white;
 }
 
 .rotated-text {
@@ -110,10 +112,11 @@ body::-webkit-scrollbar {
     border-radius: 6px;
     max-width: 500px;
     width: 100%;
-    height:49rem;
+    height: 53rem;
     text-align: center;
     font-size: 18px;
 }
+
 
 /* #contact-form{
   height:10rem;
@@ -140,7 +143,7 @@ label {
 
 .close {
   position: absolute;
-  top: 10px;
+  top: 3rem;
   right: 40px;
   cursor: pointer;
   font-size: 44px;
@@ -752,7 +755,7 @@ img {
 
 .main_heading{
   margin-top: 5%;
-  margin-left: 56%;
+  margin-left: 52%;
   padding-top: 2rem;
 }
 .main_home img{
@@ -861,7 +864,7 @@ img {
 	overflow: hidden;
 	position: relative;
 	width: 50rem;
-  margin: -87rem 0rem 2rem 0rem;
+  margin:-42rem 0rem 2rem 0rem;
 }
 
 .slider::before,
