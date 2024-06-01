@@ -1,3 +1,46 @@
+//navbar
+// search-box open close js code
+let navbar = document.querySelector(".navbar");
+let searchBox = document.querySelector(".search-box .bx-search");
+
+searchBox.addEventListener("click", () => {
+    navbar.classList.toggle("showInput");
+    if (navbar.classList.contains("showInput")) {
+        searchBox.classList.replace("bx-search", "bx-x");
+    } else {
+        searchBox.classList.replace("bx-x", "bx-search");
+    }
+});
+
+// sidebar open close js code
+let navLinks = document.querySelector(".nav-links");
+let menuOpenBtn = document.querySelector(".navbar .bx-menu");
+let menuCloseBtn = document.querySelector(".nav-links .bx-x");
+menuOpenBtn.onclick = function () {
+    navLinks.style.left = "0";
+}
+menuCloseBtn.onclick = function () {
+    navLinks.style.left = "-100%";
+}
+
+// sidebar submenu open close js code
+let arrows = document.querySelectorAll(".arrow");
+arrows.forEach(arrow => {
+    arrow.onclick = function () {
+        let parent = this.parentElement;
+        parent.classList.toggle("show-submenu");
+    }
+});
+
+
+
+
+
+
+
+
+
+
 // popup
 
 function openPopup() {
@@ -65,27 +108,8 @@ toggleReg.addEventListener("click", function (e) {
 
 
 
-  
-/*!
-Swaying photo gallery - scroll event
-Created on AUGUST 29, 2023
-Copyright (c) 2023 by Wakana Y.K. (https://codepen.io/wakana-k/pen/WNLrWMm)
-*/
-/*
-Related works : 
-Portforio design @wakana-k - https://codepen.io/wakana-k/pen/BaxKKvE
-Swaying photo gallery - hover event @wakana-k - https://codepen.io/wakana-k/pen/oNJxbPw
-*/
 
 
-
-
-const menuToggle = document.querySelector('.bx-menu');
-const navLinks = document.querySelector('.nav-links');
-
-menuToggle.addEventListener('click', () => {
-  navLinks.classList.toggle('show');
-});
 
 
 

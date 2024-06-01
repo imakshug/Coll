@@ -95,7 +95,7 @@ body::-webkit-scrollbar {
   color: #FFF;
   border-radius: 50px;
   text-align: center;
-  font-size: 15px;
+  font-size: px;
   box-shadow: 2px 2px 3px #999;
   z-index: 1000;
   display: flex;
