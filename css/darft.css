@@ -1486,7 +1486,7 @@ table th.r {
   max-width:1200px;
   margin:auto;
   display:grid;
-  grid-template-columns:1fr 1fr 1fr;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
   grid-gap:20px;
   padding:20px;
   box-sizing:border-box;
@@ -1893,9 +1893,4 @@ color: #fff;
 .footer-content-column {
     width: 24.99%;
 }
-}
-@media (min-width: 568px) {
-/* .footer-content-column {
-    width: 49.99%;
-} */
 }
