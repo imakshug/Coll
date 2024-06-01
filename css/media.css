@@ -76,7 +76,7 @@
 }
   .grid__container {
     min-width: 19%;
-    margin: -5rem 15rem 6rem -26rem;
+  margin:  -1rem 15rem 6rem -26rem;
     height: 25rem;
 }
   
@@ -865,20 +865,20 @@ font-size: 1.3rem;
   font-size: 1.2rem;
 }
   .grid__container {
-    min-width: 21%;
-    margin: -8rem 33rem 6rem -31rem;
-    height: 31rem;
+    min-width: 14%;
+    margin: -9rem 36rem 6rem -5rem;
+    height: 26rem;
   }
   .main_heading p{
-    margin: 2rem -16rem 0rem 74rem;
-    width: 15%;
+    margin: 5rem 20rem 0rem 66rem;
+    width: 19%;
     font-size: 1.2rem;
   }
   .main_heading button{
     margin: 1rem 0rem -22rem 12em;
   }
 .main_heading h1{
-  margin: 0rem -37rem 0rem -17rem;
+  margin: 5rem -37rem -4rem -31rem;
   font-size: 1.7rem;
 }
   .slider {
@@ -896,7 +896,8 @@ font-size: 1.3rem;
     padding: 0 20px;
   }
   .navbar .logo {
-    margin: -2rem 70rem 21rem 32rem;}
+    margin: -2rem 70rem 21rem 25rem
+  }
 
   .navbar p {
     font-size: 1.2rem;
@@ -920,7 +921,7 @@ font-size: 1.3rem;
     font-size: 13px;
   }
   .faculty{
-    margin-left:-47rem;
+    margin-left:-53rem;
   }
   .ag-courses_box{
     margin:10rem 16rem 0rem 3rem;
@@ -928,17 +929,20 @@ font-size: 1.3rem;
 
   } 
   .ag-format-container {
-    width: 946px;}
+    width: 831px;
+  }
   .hero h1{
-    margin: 7rem 0rem 0rem 4rem;
+    margin: 7rem 0rem 0rem 3rem;
+    font-size: 1.5rem;
   }
   .hero{
-    height:216vh;
+    height: 216vh;
+    width: 100%;
+    margin-left: 0rem;
   }
   .info_container h1{
-   
-    margin: 9rem 0rem -14rem -5rem;
-    font-size: 1.7rem;
+    margin: 9rem 0rem -14rem -3rem;
+    font-size: 1.4rem;
 
   }
   .info_container p{
@@ -960,15 +964,14 @@ font-size: 1.3rem;
     margin: 2rem 5rem -6rem -2rem;
     text-align: justify;
   }
-
   #red h2 
 
   {
-    margin-left: 20rem;
+    margin-left: 9rem;
     font-size: 1.9rem;
   }
   .red ul {
-    margin-left:-59rem;
+    margin-left:-45rem;
   }
   .red-img img {
     width: 11rem;
@@ -980,34 +983,64 @@ font-size: 1.3rem;
   margin-left:5rem;
 }
 #glance-h2{
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   margin: -30rem -22rem 0rem 13rem;
 }
 h2.card_title {
-  font-size: 1.5rem;}
+  font-size: 1.2rem;}
   .card {
     width: 93%;
-    height: 80rem;}
+    height: 84rem;}
 
     .blue p {
-      font-size: 1.2rem;}
+      font-size: 1rem;
+      margin: -2rem 4rem 0rem -11rem;
+      line-height: 2rem;
+    }
 
       .green #green-p {
-        font-size: 1.1rem;
+       
+        font-size: 1rem;
         color: white;
-        margin: 1rem 2rem 0rem 2rem;
+        margin: 9rem 2rem 0rem -12rem;
         line-height: 2rem;
       }
-
+.green h2{
+  margin: -21rem -17rem 0rem 18rem;
+}
         
 .red ul li {
-  font-size: 1.2rem;
+  font-size: 1rem;
+}
+
+.blue h2 {
+  font-size: 1.7rem;
+  color: rgb(0, 153, 255);
+  margin-left: 3rem;
+  /* text-align: center; */
+  margin: -1rem 15rem 0rem 2rem;
+}
+
+
+.card_text .note {
+font-size: 1.3rem;
+}
+
+#card-text-p {
+  font-size: 1.3rem;
+}
+#card-text-h2 {
+  font-size: 1.5rem;
+}
+#card-text-h6 {
+  font-size: 1.3rem;
 }
 .testimonial{
-  margin-bottom: -6rem;
- 
+  margin-bottom: -8rem;
+   
     font-size: 1rem;
 }
+
 .grid{
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(6, minmax(auto, 300px));
