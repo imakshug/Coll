@@ -33,8 +33,22 @@
     margin-left: 0;
     gap: 1rem;
   }
+.animator-section{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
 }
-@media (min-width: 321px) and (max-width: 479px) {
+  .animator-section-container {
+    /* max-width: 1200px; */
+    margin: auto;
+    display: grid;
+    grid-template-columns:(auto-fill);
+    grid-gap: 21px;
+    padding: 20px;
+    box-sizing: border-box;
+    height: 76rem;
+}
+}
+@media (min-width: 320px) and (max-width: 479px) {
   .main_home {
     margin-top: -2rem;
     height: 55rem;
@@ -75,7 +89,132 @@
     margin: 1rem 0rem -22rem 1em;
   }
 .main_heading h1{
+
   margin: -2rem 18rem -61rem 24rem;
+
+  font-size:  1.3rem;}
+  .slider {
+    width: 90%;
+    /* margin: -14rem auto; */
+    margin: -46rem -98rem 2rem 77rem;
+  }
+
+  nav .navbar .links {
+    margin-left: 0;
+    gap: 2.5rem;
+  }
+  .faculty{
+    margin-left:-53rem;
+  }
+  .ag-courses_box{
+    margin:10rem 16rem 0rem 3rem;
+    margin-top: 4rem;
+
+  } 
+  .ag-format-container {
+    width: 667px;
+  }
+  .hero h1{
+    margin: 7rem 0rem 0rem 3rem;
+    font-size: 1.5rem;
+  }
+  .hero{
+    height: 300vh;
+    width: 100%;
+    margin-left: 0rem;
+  }
+  .counting {
+    position: relative;
+    height: 10rem;
+    margin-bottom: 28rem;
+    margin-top: 26rem;}
+
+  .info_container h1{
+  margin: -5rem -3rem -8rem -4rem;
+  font-size: 1.2rem;
+
+  }
+  .info_container p{
+      font-size: 1rem;
+      text-align: justify;
+      margin: 10rem 0rem 0rem -1rem;
+  }
+  .highlights_container {
+    display: flex;
+    flex-direction: column;
+  }
+  .events-main{
+    margin-right: 2%;
+  }
+  .carousel-inner{
+    position: relative;
+    width: 24%;
+    margin: -1rem 43rem 0rem 23rem;
+  }
+  .profile-bg{
+    width: calc(100% - 446px);
+    height:calc(100% - -44px);
+    margin:-35rem 16rem -6rem -45rem;
+  }
+  .profile-info p{
+    margin: 2rem 16rem -6rem -1rem;
+    text-align: justify;
+  }
+  .profile-image{
+    width: 19%;
+    flex: none;
+    background-image: url(https://zephyo.github.io/22Days/code/3/graphics/profile.png);
+    background-size: cover;
+    background-position: center;
+    margin: 3rem -2rem -4rem 10rem;
+  }
+}
+
+/* Medium mobile devices (landscape and portrait) */
+@media (min-width: 480px) and (max-width: 639px) {
+  /* Styles for medium mobile devices */
+  .main_home {
+    margin-top: -2rem;
+    height: 50rem;
+  }
+
+  .main_heading {
+    margin-left: 0;
+        margin-top: 7rem;
+    text-align: center;
+  }
+
+  .hero-div {
+    margin: 4rem;
+  }
+  .counter {
+    width: 94vw;
+  gap:1rem;}
+  .text {
+    width: 40%;
+  }
+  .course_card:hover p {
+    margin-top: 40%;}
+.course_card  h1{
+  font-size: 1.2rem;
+}
+  .grid__container {
+    min-width: 24%;
+    margin: -9rem 14rem 6rem -20rem;
+    height: 31rem;
+}
+  
+  .main_heading p{
+    margin:22rem 83rem 0rem 62rem;
+    width: 19%;
+    font-size: 1.2rem;
+  }
+  .main_heading button{
+    margin: 1rem 0rem -22rem 1em;
+  }
+.main_heading h1{
+  margin: -23rem -146rem -20rem 11rem;
+
   font-size: 1.7rem;
 }
   .slider {
@@ -821,6 +960,7 @@ font-size: 1.3rem;
     margin: 2rem 5rem -6rem -2rem;
     text-align: justify;
   }
+
   #red h2 
 
   {
@@ -873,6 +1013,11 @@ h2.card_title {
   grid-template-rows: repeat(6, minmax(auto, 300px));
   overflow-y: scroll;
 }
+
+  .animator-section-container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
 }
 
 /* Large tablets (landscape and portrait) */

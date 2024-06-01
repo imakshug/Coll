@@ -284,6 +284,7 @@ nav .navbar .links li .arrow{
   /* background: red; */
   height: 100%;
   width: 40px;
+  font-size: 1rem;
   line-height: 70px;
   text-align: center;
   display: inline-block;
