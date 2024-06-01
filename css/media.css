@@ -1,36 +1,597 @@
 
 @media (max-width: 320px) {
+  .main_home {
+    height: auto;
+    padding: 2rem;
+  }
 
+  .main_heading {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .hero-div {
+    flex-direction: column;
+    margin: 1rem;
+  }
+
+  .text {
+    width: 100%;
+  }
+
+  .grid__container {
+    min-width: 100%;
+    height: auto;
+  }
+
+  .slider {
+    width: 100%;
+    margin: 2rem 0;
+  }
+
+  nav .navbar .links {
+    margin-left: 0;
+    gap: 1rem;
+  }
 }
 @media (min-width: 321px) and (max-width: 479px) {
+  .main_home {
+    margin-top: -2rem;
+    height: 50rem;
+  }
 
+  .main_heading {
+    margin-left: 0;
+        margin-top: 7rem;
+    text-align: center;
+  }
+
+  .hero-div {
+    margin: 4rem;
+  }
+  .counter {
+    width: 94vw;
+  gap:1rem;}
+  .text {
+    width: 40%;
+  }
+  .course_card:hover p {
+    margin-top: 40%;}
+.course_card  h1{
+  font-size: 1.2rem;
+}
+  .grid__container {
+    min-width: 20%;
+    margin:-9rem 25rem 22rem -28rem;
+    height: 22rem;
 }
 
+  
+  .main_heading p{
+    margin: 22rem 71rem 0rem 61rem;
+    width: 13%;
+    font-size: 1rem;
+  }
+  .main_heading button{
+    margin: 1rem 0rem -22rem 1em;
+  }
+.main_heading h1{
+  margin: -28rem -146rem -20rem 11rem;
+  font-size:  1.3rem;}
+  .slider {
+    width: 90%;
+    /* margin: -14rem auto; */
+    margin: -46rem -98rem 2rem 77rem;
+  }
 
+  nav .navbar .links {
+    margin-left: 0;
+    gap: 2.5rem;
+  }
+  .faculty{
+    margin-left:-53rem;
+  }
+  .ag-courses_box{
+    margin:10rem 16rem 0rem 3rem;
+    margin-top: 4rem;
+
+  } 
+  .ag-format-container {
+    width: 667px;
+  }
+  .hero h1{
+    margin: 7rem 0rem 0rem 3rem;
+    font-size: 1.5rem;
+  }
+  .hero{
+    height: 300vh;
+    width: 100%;
+    margin-left: 0rem;
+  }
+  .counting {
+    position: relative;
+    height: 10rem;
+    margin-bottom: 28rem;
+    margin-top: 26rem;}
+  .info_container h1{
+    margin: -10rem 60rem -8rem -5rem;
+    font-size: 1.2rem;
+
+  }
+  .info_container p{
+    font-size: 1rem;
+    text-align: justify;
+    margin: 9rem -4rem -11rem -4rem;
+  }
+  .carousel-inner{
+    position: relative;
+    width: 24%;
+    margin: -1rem 43rem 0rem 23rem;
+  }
+  .profile-bg{
+    width: calc(100% - 446px);
+    height:calc(100% - -44px);
+    margin:-35rem 16rem -6rem -45rem;
+  }
+  .profile-info p{
+    margin: 2rem 16rem -6rem -1rem;
+    text-align: justify;
+  }
+  .profile-image{
+    width: 19%;
+    flex: none;
+    background-image: url(https://zephyo.github.io/22Days/code/3/graphics/profile.png);
+    background-size: cover;
+    background-position: center;
+    margin: 3rem -2rem -4rem 10rem;
+  }
+}
 
 /* Medium mobile devices (landscape and portrait) */
 @media (min-width: 480px) and (max-width: 639px) {
   /* Styles for medium mobile devices */
+  .main_home {
+    margin-top: -2rem;
+    height: 50rem;
+  }
+
+  .main_heading {
+    margin-left: 0;
+        margin-top: 7rem;
+    text-align: center;
+  }
+
+  .hero-div {
+    margin: 4rem;
+  }
+  .counter {
+    width: 94vw;
+  gap:1rem;}
+  .text {
+    width: 40%;
+  }
+  .course_card:hover p {
+    margin-top: 40%;}
+.course_card  h1{
+  font-size: 1.2rem;
+}
+  .grid__container {
+    min-width: 24%;
+    margin: -9rem 14rem 6rem -20rem;
+    height: 31rem;
+}
+  
+  .main_heading p{
+    margin:22rem 83rem 0rem 62rem;
+    width: 19%;
+    font-size: 1.2rem;
+  }
+  .main_heading button{
+    margin: 1rem 0rem -22rem 1em;
+  }
+.main_heading h1{
+  margin: -23rem -146rem -20rem 11rem;
+  font-size: 1.7rem;
+}
+  .slider {
+    width: 90%;
+    /* margin: -14rem auto; */
+    margin: -46rem -98rem 2rem 77rem;
+  }
+
+  nav .navbar .links {
+    margin-left: 0;
+    gap: 2.5rem;
+  }
+  .faculty{
+    margin-left:-53rem;
+  }
+  .ag-courses_box{
+    margin:10rem 16rem 0rem 3rem;
+    margin-top: 4rem;
+
+  } 
+  .ag-format-container {
+    width: 667px;
+  }
+  .hero h1{
+    margin: 7rem 0rem 0rem 3rem;
+    font-size: 1.5rem;
+  }
+  .hero{
+    height: 300vh;
+    width: 100%;
+    margin-left: 0rem;
+  }
+  .counting {
+    position: relative;
+    height: 10rem;
+    margin-bottom: 28rem;
+    margin-top: 26rem;}
+  .info_container h1{
+    margin: -10rem 60rem -8rem -5rem;
+    font-size: 1.2rem;
+
+  }
+  .info_container p{
+    font-size: 1rem;
+    text-align: justify;
+    margin: 9rem -4rem -11rem -4rem;
+  }
+  .carousel-inner{
+    position: relative;
+    width: 24%;
+    margin: -1rem 43rem 0rem 23rem;
+  }
+  .profile-bg{
+    width: calc(100% - 446px);
+    height:calc(100% - -44px);
+    margin:-35rem 16rem -6rem -45rem;
+  }
+  .profile-info p{
+    margin: 2rem 16rem -6rem -1rem;
+    text-align: justify;
+  }
+  .profile-image{
+    width: 19%;
+    flex: none;
+    background-image: url(https://zephyo.github.io/22Days/code/3/graphics/profile.png);
+    background-size: cover;
+    background-position: center;
+    margin: 3rem -2rem -4rem 10rem;
+  }
 }
 
 /* Large mobile devices (landscape and portrait) */
-@media (min-width: 640px) and (max-width: 767px) {
+@media (min-width: 640px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2)  {
   /* Styles for large mobile devices */
+  .main_home {
+    margin-top: -2rem;
+    height: 34rem;
+  }
+
+  .main_heading {
+    margin-left: 0;
+        margin-top: 7rem;
+    text-align: center;
+  }
+
+  .hero-div {
+    margin: 4rem;
+  }
+  .counter {
+    width: 94vw;
+  gap:1rem;}
+  .text {
+    width: 40%;
+  }
+  .course_card:hover p {
+    margin-top: 40%;}
+.course_card  h1{
+  font-size: 1.2rem;
+}
+  .grid__container {
+    min-width: 14%;
+    margin: -9rem 36rem 6rem -5rem;
+    height: 26rem;
+  }
+  .main_heading p{
+    margin: 5rem 20rem 0rem 66rem;
+    width: 19%;
+    font-size: 1.2rem;
+  }
+  .main_heading button{
+    margin: 1rem 0rem -22rem 12em;
+  }
+.main_heading h1{
+  margin: 5rem -37rem -4rem -31rem;
+  font-size: 1.7rem;
+}
+  .slider {
+    width: 90%;
+    /* margin: -14rem auto; */
+    margin: -46rem -98rem 2rem 77rem;
+  }
+
+  nav .navbar .links {
+    margin-left: 0;
+    gap: 2.5rem;
+  }
+  .faculty{
+    margin-left:-53rem;
+  }
+  .ag-courses_box{
+    margin:10rem 16rem 0rem 3rem;
+    margin-top: 4rem;
+
+  } 
+  .ag-format-container {
+    width: 831px;
+  }
+  .hero h1{
+    margin: 7rem 0rem 0rem 3rem;
+    font-size: 1.5rem;
+  }
+  .hero{
+    height: 216vh;
+    width: 100%;
+    margin-left: 0rem;
+  }
+  .info_container h1{
+    margin: 9rem 0rem -14rem -3rem;
+    font-size: 1.4rem;
+
+  }
+  .info_container p{
+    font-size: 1.2rem;
+    text-align: justify;
+    margin: 16rem -4rem -11rem -4rem;
+  }
+  .carousel-inner{
+    position: relative;
+    width: 24%;
+    margin: -1rem 43rem 0rem 23rem;
+  }
+  .profile-bg{
+    width: calc(100% - 446px);
+    height:calc(100% - -44px);
+    margin:-35rem 16rem -6rem -45rem;
+  }
+  .profile-info p{
+    margin: 2rem 5rem -6rem -2rem;
+    text-align: justify;
+  }
 }
 
 /* Small tablets (landscape and portrait) */
 @media (min-width: 768px) and (max-width: 991px) {
   /* Styles for small tablets */
+  .main_home {
+    margin-top: -2rem;
+    height: 34rem;
+  }
+
+  .main_heading {
+    margin-left: 0;
+        margin-top: 7rem;
+    text-align: center;
+  }
+
+  .hero-div {
+    margin: 4rem;
+  }
+  .counter {
+    width: 94vw;
+  gap:1rem;}
+  .text {
+    width: 40%;
+  }
+  .course_card:hover p {
+    margin-top: 40%;}
+.course_card  h1{
+  font-size: 1.2rem;
+}
+  .grid__container {
+    min-width: 21%;
+    margin: -8rem 33rem 6rem -31rem;
+    height: 31rem;
+  }
+  .main_heading p{
+    margin: 2rem -16rem 0rem 74rem;
+    width: 15%;
+    font-size: 1.2rem;
+  }
+  .main_heading button{
+    margin: 1rem 0rem -22rem 12em;
+  }
+.main_heading h1{
+  margin: 0rem -37rem 0rem -17rem;
+  font-size: 1.7rem;
+}
+  .slider {
+    width: 90%;
+    /* margin: -14rem auto; */
+    margin: -46rem -98rem 2rem 77rem;
+  }
+
+  nav .navbar .links {
+    margin-left: 0;
+    gap: 2.5rem;
+  }
+  .faculty{
+    margin-left:-47rem;
+  }
+  .ag-courses_box{
+    margin:10rem 16rem 0rem 3rem;
+    margin-top: 4rem;
+
+  } 
+  .ag-format-container {
+    width: 946px;}
+  .hero h1{
+    margin: 7rem 0rem 0rem 4rem;
+  }
+  .hero{
+    height:216vh;
+  }
+  .info_container h1{
+   
+    margin: 9rem 0rem -14rem -5rem;
+    font-size: 1.7rem;
+
+  }
+  .info_container p{
+    font-size: 1.2rem;
+    text-align: justify;
+    margin: 16rem -4rem -11rem -4rem;
+  }
+  .carousel-inner{
+    position: relative;
+    width: 24%;
+    margin: -1rem 43rem 0rem 23rem;
+  }
+  .profile-bg{
+    width: calc(100% - 446px);
+    height:calc(100% - -44px);
+    margin:-35rem 16rem -6rem -45rem;
+  }
+  .profile-info p{
+    margin: 2rem 5rem -6rem -2rem;
+    text-align: justify;
+  }
 }
 
 /* Large tablets (landscape and portrait) */
 @media (min-width: 992px) and (max-width: 1199px) {
   /* Styles for large tablets */
+  .main_home {
+    height: auto;
+    padding: 4rem;
+  }
+
+  .main_heading {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .hero-div {
+    margin: 4rem;
+  }
+  .counter {
+    width: 94vw;}
+  .text {
+    width: 40%;
+  }
+  .course_card:hover p {
+    margin-top: 40%;}
+
+  .grid__container {
+    min-width: 30%;
+    margin:-8rem 32rem 6rem 3rem;
+    height: auto;
+  }
+  .main_heading p{
+    margin: 1rem -16rem 0rem 76rem;
+    width: 20%;
+    font-size:1.2rem;
+  }
+  .main_heading button{
+    margin: 1rem 0rem -22rem 24em;
+  }
+.main_heading h1{
+  margin: 0rem -37rem 0rem -9rem;
+  font-size: 2rem;
+}
+  .slider {
+    width: 90%;
+    /* margin: -14rem auto; */
+    margin: -46rem -98rem 2rem 77rem;
+  }
+
+  nav .navbar .links {
+    margin-left: 0;
+    gap: 2.5rem;
+  }
+  .faculty{
+    margin-left:-20rem;
+  }
+  .ag-courses_box{
+    margin:10rem 0rem 0rem 0rem;
+
+  } 
+  .ag-format-container {
+    width: 946px;}
+  .hero h1{
+    margin: 14rem 0rem 0rem 4rem;
+  }
+  .info_container h1{
+    margin: 6rem 0rem -14rem -4rem;
+    font-size: 2rem;
+  }
+  .info_container p{
+    font-size: 1.5rem;
+    text-align: justify;
+    margin: 16rem -5rem -11rem -8rem;
+  }
+
 }
 
 /* Small laptops and desktops */
-@media (min-width: 1200px) and (max-width: 1439px) {
+@media (min-width: 1200px) and (max-width: 1439px) and (-webkit-min-device-pixel-ratio: 2)  {
   /* Styles for small laptops and desktops */
+  .main_home {
+    height: auto;
+    padding: 4rem;
+  }
+
+  .main_heading {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .hero-div {
+    margin: 4rem;
+  }
+
+  .text {
+    width: 40%;
+  }
+
+  .grid__container {
+    min-width: 30%;
+    margin:-8rem 37rem 6rem -23rem;
+    height: auto;
+  }
+  .main_heading p{
+    margin: 1rem -37rem 0rem 75rem;
+    width: 26%;
+  }
+  .main_heading button{
+    margin: 1rem 0rem -22rem 9rem;
+  }
+.main_heading h1{
+  margin: 0rem -37rem 0rem 0rem;
+}
+  .slider {
+    width: 90%;
+    /* margin: -14rem auto; */
+    margin: -46rem -98rem 2rem 77rem;
+  }
+
+  nav .navbar .links {
+    margin-left: 0;
+    gap: 2.5rem;
+  }
+  .faculty{
+    margin-left:-11rem;
+  }
+  .ag-courses_box{
+    margin:10rem 0rem 0rem 0rem;
+
+  } 
+  .hero h1{
+    margin: 14rem 0rem 0rem 17rem;
+  }
 }
 
 /* Large laptops and desktops */

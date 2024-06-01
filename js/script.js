@@ -80,7 +80,12 @@ Swaying photo gallery - hover event @wakana-k - https://codepen.io/wakana-k/pen/
 
 
 
+const menuToggle = document.querySelector('.bx-menu');
+const navLinks = document.querySelector('.nav-links');
 
+menuToggle.addEventListener('click', () => {
+  navLinks.classList.toggle('show');
+});
 
 
 
