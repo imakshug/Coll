@@ -40,12 +40,9 @@
   .animator-section-container {
     /* max-width: 1200px; */
     margin: auto;
-    display: grid;
-    grid-template-columns:(auto-fill);
-    grid-gap: 21px;
-    padding: 20px;
-    box-sizing: border-box;
-    height: 76rem;
+    display: flex;
+    flex-direction: column;
+    
 }
 }
 @media (min-width: 320px) and (max-width: 479px) {
@@ -168,6 +165,13 @@
     background-position: center;
     margin: 3rem -2rem -4rem 10rem;
   }
+  .animator-section-container {
+    /* max-width: 1200px; */
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    
+}
 }
 
 /* Medium mobile devices (landscape and portrait) */
